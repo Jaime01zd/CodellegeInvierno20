@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Ingrese 2 numeros</h1>
+        <input type="text" id="uno" type="number">
+        <input type="text" id="dos" type="number">
+        <button onclick="hello()"> Mostrar Numero Mayor</button>
+    </body>
+
+    <script>
+        function hello() {
+            var x=document.getElementById("uno").value
+            var y=document.getElementById("dos").value
+            if (x<y) {
+                var higher= "El numero  "+y+" es el mayor"
+            }
+            else if (x==y)
+            {
+                var higher= "Ambos son iguales"
+            }
+            else {
+                var higher= "El numero  "+x+" es el mayor"
+            }
+            alert(higher)
+        }
+    </script>
+</html>

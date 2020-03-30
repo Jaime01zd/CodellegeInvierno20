@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Ingrese las calificaciones de los alumnos</h1>
+        <h2>Alumno1</h2>
+        <input type="text" id="uno" type="number">
+        <h2>Alumno2</h2>
+        <input type="text" id="dos" type="number">
+        <h2>Alumno3</h2>
+        <input type="text" id="tres" type="number">
+        <h2>Alumno4</h2>
+        <input type="text" id="jhin" type="number">
+        <h2>Alumno5</h2>
+        <input type="text" id="cinco" type="number">
+        <button onclick="hello()"> Mostrar Promedio</button>
+    </body>
+
+    <script>
+        function hello() {
+            var a=parseInt(document.getElementById("uno").value)
+            var b=parseInt(document.getElementById("dos").value)
+            var c=parseInt(document.getElementById("tres").value)
+            var d=parseInt(document.getElementById("jhin").value)
+            var e=parseInt(document.getElementById("cinco").value)
+            var result=(a+b+c+d+e)/5
+            alert("El promedio de los 5 alumnos es "+result)
+        }
+    </script>
+</html>
