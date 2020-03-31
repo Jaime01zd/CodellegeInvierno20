@@ -1,0 +1,15 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>El objeto que más se repite en el array</h1>
+    </body>
+
+    <script>
+        Array.prototype.unique=function(a){return function(){return this.filter(a)}}(function(a,b,c){return c.indexOf(a,b+1)<0});
+        var colors=["rojo","azul","amarillo","azul","celeste","marron","azul","rojo"]
+        document.write("Original: "+"<br>"+"<br>"+colors+"<br>"+"<br>");
+        document.write("Sin duplicados "+"<br>"+"<br>"+colors.unique());
+    </script>
+</html>

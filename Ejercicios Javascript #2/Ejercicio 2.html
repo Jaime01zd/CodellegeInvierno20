@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>El objeto que más se repite en el array</h1>
+    </body>
+
+    <script>
+        var z=0
+        var x=0
+        var colors=["rojo","azul","amarillo","azul","celeste","marron","azul","rojo"]
+
+        for (i=0;i<colors.length;i++){
+            for (b=0;b<colors.length;b++){
+                if (colors[i]==colors[b]){
+                var x=x+1
+                }
+                if (z<x){
+                    var result=colors[i]
+                    z=x
+                }
+            }
+            x=0
+        }
+        document.write(result)
+        document.write("<br>"+"<br>"+"El Array: "+"<br>"+"<br>"+colors)
+    </script>
+</html>

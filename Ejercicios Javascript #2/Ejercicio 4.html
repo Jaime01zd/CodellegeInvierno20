@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="one"> <button onclick="add()">Agregar elemento al array</button>
+        <br>
+        <br>
+        <p id="text"></p>
+    </body>
+
+    <script>
+        var z = ["uno","dos","tres"]
+        document.getElementById("text").innerHTML=("El array: "+"<br>"+"<br>"+"<br>"+z)
+        function add() {
+            x=document.getElementById("one").value
+            z.push(x)
+            document.getElementById("text").innerHTML=("El array: "+"<br>"+"<br>"+"<br>"+z)
+        }
+
+    </script>
+</html>
