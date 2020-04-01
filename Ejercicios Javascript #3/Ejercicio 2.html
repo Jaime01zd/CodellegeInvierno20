@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    </body>
+
+    <script>
+        var x=prompt("indica una palabra")
+        var z=[]
+        
+        for (i=1;i<=x.length;i++){
+            z[i-1]=x.slice(i-1,i)
+        }
+                
+        for (i=0;i<z.length;i++){
+            document.write(z[i]+"<br>")
+        }
+
+    </script>
+</html>

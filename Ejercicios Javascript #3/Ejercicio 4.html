@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    </body>
+
+    <script>
+        //var x=prompt("indica una palabra")
+        var x=prompt("Escribe tu correo")
+        var z=[]
+        var p=x.length-10;
+        for (i=0;i<=x.length;i++){
+            if (i>=p){
+                z[i]=x.slice(i-1,i)
+            }
+                else if (i>=4){
+                z[i]="*"
+                }
+                    else {
+                        z[i]=x.slice(i-1,i)
+                    }
+        }
+
+        for (i=0;i<=x.length;i++){
+            document.write(z[i])
+        }
+
+        document.write("<br>"+"<br>"+"Original: "+"<br>"+"<br>"+x)
+
+    </script>
+</html>
