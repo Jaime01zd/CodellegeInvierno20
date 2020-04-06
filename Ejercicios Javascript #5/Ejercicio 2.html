@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="">
+            <input type="text" placeholder="Ingresa tu nombre" id="name">
+            <input type="text" placeholder="Ingresa tu Apellido" id="last_name">
+        </form>
+        <button onclick="enviar()">Enviar</button>
+    </body>
+
+    <script>
+        function enviar(){
+            var name = document.getElementById("name").value
+            var last_name = document.getElementById("last_name").value
+
+            document.write("Nombre : "+name+"<br>")
+            document.write("Apellido : "+last_name)
+        }
+    </script>
+</html>

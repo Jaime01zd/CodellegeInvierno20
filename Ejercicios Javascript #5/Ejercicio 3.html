@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="">
+            <select id="lista">
+                <option value="0">Estados de México</option>
+                <option value="1">Nuevo Leon</option>
+                <option value="2">Oaxaca</option>
+                <option value="3">Guerrero</option>
+                <option value="4">Salvador</option>
+            </select>
+        </form>
+        <button onclick="erase()">Elimniar pais infiltrado</button>
+    </body>
+
+    <script>
+        function erase(){
+            var select = document.getElementById("lista")
+            select.remove(4)
+        }
+    </script>
+</html>

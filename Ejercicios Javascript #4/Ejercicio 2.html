@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    </body>
+
+    <script>
+        var persona ={
+            peso:"60kg",
+            Nombre:"Jaime",
+            Altura:"1.75m",
+            correo:"jgallegos3504@ppsc.edu.mx",
+        }
+        
+        document.write("El joven "+persona.Nombre+" tiene como peso de "+persona.peso+" y de altura "+persona.Altura+". Su correo es: "+persona.correo)
+        
+        delete persona.Nombre
+        
+        document.write("<br> <br> propiedad nombre eliminada: <br> <br>")
+        document.write("El joven "+persona.Nombre+" tiene como peso de "+persona.peso+" y de altura "+persona.Altura+". Su correo es: "+persona.correo)
+    </script>
+</html>
