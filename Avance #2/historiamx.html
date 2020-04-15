@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Historia mexicana</title>
+        <meta charset="UTF-8">
+        <style>
+
+            *{
+                margin: 0px;
+            }
+
+			#header {
+                width: 100%;
+                background-color: rgb(237, 252, 110);
+                position: fixed;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+            /*Barra de navegación*/
+            .nav {
+                padding-left: 200px;
+            }
+
+            /*Dentro de la barra de navegación*/
+			.nav li a {
+				color: rgb(170, 125, 0);
+				text-decoration:none;
+				padding: 20px 40px;
+				display:block;
+			}
+
+            /*Background a los subtemas*/
+            .nav li ul li {
+                background-color: rgb(237, 252, 110);
+                margin-left: -40px;
+            }
+
+			.nav li a:hover {
+				background-color: #43434342;
+			}
+
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+                list-style: none;
+			}
+
+			li:hover ul {
+				display:block;
+			}
+
+            .nav > li {
+                display: inline-block;
+            }
+        
+            /*Acomodado subtemas de historia*/
+            .historia li{
+                width:135px;
+                text-align: left;
+            }
+            .historia li a{
+                padding:10px 10px;
+            }
+
+            /*Acomodado subtemas de naturaleza*/
+            .naturaleza li{
+                width:157px;
+                text-align: left;
+            }
+            .naturaleza li a{
+                padding:10px 10px;
+            }
+            
+            /*Acomodado subtemas de cultura*/
+            .cultura li{
+                width:130px;
+                text-align: left;
+            }
+            .cultura li a{
+                padding:10px 10px;
+            }
+
+            /*Slider*/
+
+            .slider{
+                width:100%;
+                height:580px;
+                margin:auto;
+                overflow:hidden;
+                background-color: black;
+                padding-top:57px;
+            }
+            
+            .slider ul {
+                display:flex;
+                padding: 0;
+                width: 400%;
+                animation: cambio 20s infinite alternate;
+            }
+            
+            .slider li{
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider img {
+            width: 100%;
+            }
+            
+            @keyframes cambio {
+                0%{ margin-left:0;}
+                20%{ margin-left:0;}
+                
+                25%{ margin-left:-100%;}
+                45%{ margin-left:-100%;}
+                
+                50%{ margin-left:-200%;}
+                70%{ margin-left:-200%;}
+                
+                75%{ margin-left:-300%;}
+                100%{ margin-left:-300%;}
+            }
+            .logo_s{
+                width:100px;
+                height:30px;
+            }
+            .logo img{
+                width:150px;
+                height:58px;
+                position:absolute;
+            }
+            
+            footer {
+                background-color: rgb(175, 128, 0);
+                color: #fff;
+                height: 400px;
+                font-size:21px;
+            }
+            .contact{
+                margin-left:3%;
+                width: 30%;
+                border:2px solid white;
+                float:left;
+            }
+            .pages{
+                margin-left:1%;
+                float:left;
+                width: 30%;
+                border:2px solid white;
+            }
+            .social_media{
+                margin-left:1%;
+                float:left;
+                width: 30%;
+                border:2px solid white;
+            }
+            
+            .social_media img{
+                float:left;
+                width:30px;
+                margin-left:0px;
+            }
+
+            /*Contenido*/
+            .tittle {
+                font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: xx-large;
+                color: rgb(170, 125, 0);
+                margin-top: 16px;
+            }
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: initial;
+                padding: 7px;
+                margin-left: 45px;
+            }
+
+            .cont img {
+                width: 20%;
+                height: 10%;
+                float: right;
+                margin-top: -23px;
+                margin-right: 50px;
+                margin-bottom: 9px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+            <!--Barra de navegación-->
+
+        <div id="header">
+            <nav> 
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Historia</a>
+                        <ul class="historia">
+                            <li><a href="">Fosiles</a></li>
+                            <li><a href="">Historia mexicana</a></li>
+                            <li><a href="">Historia del mundo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Naturaleza</a>
+                        <ul class="naturaleza">
+                            <li><a href="">Flora</a></li>
+                            <li><a href="">Fauna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Cultura</a>
+                        <ul class="cultura">
+                            <li><a href="">Arte</a></li>
+                            <li><a href="">Cine</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Recorridos y Programas</a></li>
+                </ul>
+            </nav>
+        </div>             <!--Aquí termina la barra de navegación-->
+
+            <div class="slider"> 
+                 <ul>
+                    <li><img src="thumb.jpg" alt="Chichen Itza"></li>
+                    <li><img src="teh.jpg" alt="Tenochtitlán"></li>
+                    <li><img src="wall.jpg" alt="Calendario azteca"></li>
+                    <li><img src="thumb.jpg" alt="Chichen Itza"></li>
+                 </ul>
+            </div>
+
+            <!--Contenido de la página-->
+
+            <p class="tittle">Civilizaciones mesoamericanas</p>
+
+            <div class="cont">
+                <img src="azt.jpg" alt="calendario azteca">
+            </div>
+
+            <p>Los primeros habitantes de la zona datan de 20.000 años a. C. y eran <br> 
+            nómadas, cazadores y recolectores, hasta el establecimiento de una cultura <br> 
+            agrícola sedentaria en Mesoamérica. La civilización mesoamericana se <br> 
+            extendió por Centroamérica y consistió en un número importante de <br>
+            culturas primigenias como los olmecas, zapotecas, toltecas o mixtecas.</p>
+
+            <p>Muchas de estas culturas dejaron importantes restos arqueológicos y se <br> 
+            transmitieron las unas a las otras un imaginario más o menos común, en el <br> 
+            que predominan dioses como la serpiente emplumada (Quetzalcóatl) y <br> 
+            estilos arquitectónicos piramidales.</p>
+
+            <p>La última de estas dinastías fue la mexica o azteca, quienes fundaron <br> 
+            sobre los restos de la antigua ciudad de Tenochtitlán su Imperio (México-Tenochtitlán) <br>
+            uno de los más extensos que conociera la región.</p>
+
+            <footer>
+                <div class="contact">
+                    Contacto:
+                    <div>
+                        Direccion: JQM8+24 Cerro de La Silla, Nuevo León, Guadalupe
+                    </div>
+                    <div>
+                        Numero: +81 555 6507156
+                    </div>
+                </div>
+                <div class="pages">
+                    Paginas
+                    <div>fósiles</div>
+                    <div>Hisoria Mexicana</div>
+                    <div>Historia del mundo</div>
+                    <div>Flora</div>
+                    <div>Fauna</div>
+                    <div>Arte</div>
+                    <div>Cine</div>
+                    <div>Escuelas de verano</div>
+                    <div>Recorridos y programas</div>
+                </div>
+                <div class="social_media">
+                    Redes sociales:
+                    <div><img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" alt=""></div>
+                    <div><img src="https://cdn.icon-icons.com/icons2/220/PNG/512/facebook_25551.png" alt=""></div>
+                    <div><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt=""></div>
+                    <div><img src="https://img.icons8.com/color/480/gmail.png" alt=""></div>
+                </div>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Historia mexicana</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css.css">
+    </head>
+
+    <body id="body">
+            <!--Barra de navegación-->
+
+        <div id="header">
+            <nav> 
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Historia</a>
+                        <ul class="historia">
+                            <li><a href="">Fosiles</a></li>
+                            <li><a href="">Historia mexicana</a></li>
+                            <li><a href="">Historia del mundo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Naturaleza</a>
+                        <ul  class="naturaleza">
+                            <li><a href="">Flora</a></li>
+                            <li><a href="">Fauna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Cultura</a>
+                        <ul  class="cultura">
+                            <li><a href="">Arte</a></li>
+                            <li><a href="">Cine</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="programas_recorridos.html">Recorridos y Programas</a></li>
+                </ul>
+            </nav>
+            <div class="user">
+                <button onclick="user()" value="1" id="user" class="button_log_in">Iniciar sesión</button>
+                <button onclick="profile()" value="1" id="button_user" class="button_user">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-thumb.jpg" alt="" id="btn_img"> 
+                    <div id="btn_txt">Alex03</div> 
+                </button>
+            </div>
+           <div class="log_in">
+               <div class="user_title">Usuario</div>
+               <input type="text" id="user_name">
+               <div class="alert_user">
+                   <p id="alert_user">Escribe el nombre de usuario</p>
+                </div>
+               <div class="password_title">Contraseña</div>
+               <input type="password" id="password">
+               <div class="alert_password">
+                   <p id="alert_password">Escribe la Contraseña</p>
+                </div>
+               <div></div>
+               <button onclick="log_in()" class="send" id="send">Ingresar</button>
+           </div>
+           <div class="profile">
+            <div>
+                <img class="img_profile"src="https://c4.wallpaperflare.com/wallpaper/410/867/750/vector-forest-sunset-forest-sunset-forest-wallpaper-thumb.jpg" alt="">
+            </div>
+            <div class="second_part">
+                <div class="user_name_profile">Usuario: Alex03</div>
+                <div></div>
+                <button class="log_out" onclick="log_out()" id="log_out">Cerrar sesión</button>
+                </div>
+            </div>
+        </div>             <!--Aquí termina la barra de navegación-->
+
+        <div class="slider">
+            <ul>
+                <li><img src="images/cerro.jpg" alt="cerro de la Silla"> </li>
+                <li><img src="images/pinturas.jpg" alt="pinturas"> </li>
+                <li><img src="images/museo.jpg" alt="vista desde afuera del muso"> </li>
+                <li><img src="images/biblioteca.jpg" alt="biblioteca"> </li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24201.74176454292!2d-100.23037576277196!3d25.617858097585717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c08c31400855%3A0x43327b80ef78b9be!2sCerro%20de%20la%20Silla!5e0!3m2!1ses!2smx!4v1586900192355!5m2!1ses!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>
+        <div class="map_info">
+            <div class="map_info_title">
+                Ubicación
+            </div>
+            <div>
+                Cerro de La Silla # 602, 64000 Monterrey, N.L.
+            </div>
+            <div class="map_info_title">
+                Horarios de visita
+            </div>
+            <div>
+                Todos los dias, 7 am - 8pm
+            </div>
+            <div class="map_info_title">
+                Telefono de contacto
+            </div>
+            <div>
+                +81 555 6507156
+            </div>
+        </div>
+        <footer>
+            <div class="contact">
+                <div class="footer_title">Contacto</div>
+                <div class="sep_bottom"></div>
+                <div >
+                    Direccion: JQM8+24 Cerro de La Silla, Nuevo León, Guadalupe
+                </div>
+                <div>
+                    Numero: +81 555 6507156
+                </div>
+            </div>
+            <div class="pages">
+                <div class="footer_title">Paginas </div>
+                <div class="sep_bottom"></div>
+                <div>Fósiles</div>
+                <div>Hisoria Mexicana</div>
+                <div>Historia del mundo</div>
+                <div>Flora</div>
+                <div>Fauna</div>
+                <div>Arte</div>
+                <div>Cine</div>
+                <div>Escuelas de verano</div>
+                <div>Recorridos y programas</div>
+            </div>
+            <div class="social_media">
+                <div class="footer_title">Redes sociales</div>
+                <div class="sep_bottom"></div>
+                <div><img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" alt=""></div>
+                <div><img src="https://cdn.icon-icons.com/icons2/220/PNG/512/facebook_25551.png" alt=""></div>
+                <div><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt=""></div>
+                <div><img src="https://img.icons8.com/color/480/gmail.png" alt=""></div>
+            </div>
+        </footer>
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function user(){
+            x=document.getElementById("user").value
+            if (x==1){
+                $(".log_in").show();
+                $(".log_in").animate({
+                    height:"300px",
+                },150)
+                //desabilitar el botón hasta que se termine la transicion para que no haya bug
+                document.getElementById("user").disabled=true
+                setTimeout(function(){
+                    document.getElementById("user").disabled=false
+                },200)
+                //cambiar propiedades
+                document.getElementById("user").style.backgroundColor="white"
+                document.getElementById("user").value="2"
+                document.getElementById("user").innerHTML="Cerrar"
+                document.getElementById("user").style.color="black"
+                document.getElementById("header").style.borderBottom="2px solid white"
+            }
+            else {
+                $(".log_in").animate({
+                    height:"0px",
+                },150)
+                $(".log_in").hide(0)
+                //desabilitar el botón hasta que se termine la transicion para que no haya bug
+                document.getElementById("user").disabled=true
+                setTimeout(function(){
+                    document.getElementById("user").disabled=false
+                },200)
+                //hasta que no se termine la transición principal, no se cambiaran las sig propiedades
+                setTimeout(function(){
+                    document.getElementById("user").style.backgroundColor="rgb(237, 252, 110)"
+                    document.getElementById("user").style.color="rgb(170, 125, 0)"
+                    document.getElementById("header").style.borderBottom="none"
+                },150)
+                document.getElementById("user").innerHTML="Iniciar sesión"
+                document.getElementById("user").value="1"
+
+            }
+        }
+        function log_in(){
+            var name=document.getElementById("user_name").value
+            var pass=document.getElementById("password").value
+
+            //En caso de no haya escrito nada
+            if (name==""&&pass==""){
+                //user
+                document.getElementById("user_name").style.border="2px solid red"
+                document.getElementById("alert_user").innerHTML="Escribe el nombre de usuario"
+                document.getElementById("alert_user").style.display="block"
+                //password
+                document.getElementById("password").style.border="2px solid red"
+                document.getElementById("alert_password").innerHTML="Escribe la contraseña"
+                document.getElementById("alert_password").style.display="block"
+            }
+
+            //En caso de que solo haya escrito la contraseña
+            else if (name==""&&pass!=""){
+                //user
+                document.getElementById("user_name").style.border="2px solid red"
+                document.getElementById("alert_user").innerHTML="Escribe el nombre de usuario"
+                document.getElementById("alert_user").style.display="block"
+                //password
+                document.getElementById("password").style.border="2px outset rgb(89, 160, 253)"
+                document.getElementById("alert_password").style.display="none"
+            }
+
+            //En caso de que solo haya escrito el usuario
+            else if (name=="Alex03"&&pass==""){
+                //password
+                document.getElementById("password").style.border="2px solid red"
+                document.getElementById("alert_password").innerHTML="Escribe la contraseña"
+                document.getElementById("alert_password").style.display="block"
+                //user
+                document.getElementById("user_name").style.border="2px outset rgb(97, 255, 97)"
+                document.getElementById("alert_user").style.display="none"
+            }
+            //En caso de que el usuario sea incorrecto
+            else if (name!="Alex03"){
+                //user
+                document.getElementById("user_name").style.border="2px solid red"
+                document.getElementById("alert_user").style.display="block"
+                document.getElementById("alert_user").innerHTML="El nombre de usuario no existe"               
+            }
+            //En caso de que la contraseña sea incorrecta
+            else if(name=="Alex03"&&pass!="codellege"){
+                //password
+                document.getElementById("password").style.border="2px solid red"
+                document.getElementById("alert_password").style.display="block"
+                document.getElementById("alert_password").innerHTML="La contraseña es incorrecta"
+                //user
+                document.getElementById("user_name").style.border="2px outset rgb(97, 255, 97)"
+                document.getElementById("alert_user").style.display="none"
+            }
+
+            //en caso de que todo esté bien              
+            else if (name=="Alex03"&&pass=="codellege"){
+                //password
+                document.getElementById("password").style.border="2px outset rgb(97, 255, 97)"
+                document.getElementById("alert_password").style.display="none"
+                //user
+                document.getElementById("user_name").style.border="2px outset rgb(97, 255, 97)"
+                document.getElementById("alert_user").style.display="none"
+                //cursor
+                document.getElementById("body").style.cursor="progress";
+                document.getElementById("send").style.cursor="progress";
+                // deshabilitar boton enviar
+                document.getElementById("send").disabled=true;
+                //regresar propiedades al boton perfil de usuario 
+                    document.getElementById("btn_txt").innerHTML="Alex03";
+                    document.getElementById("button_user").value="1"
+                    document.getElementById("log_out").style.cursor="pointer";
+                    $("#btn_img").fadeIn(100);
+                    //habilitar boton cerrar sesión
+                    document.getElementById("log_out").disabled=false;
+                //border bottom al header regresarlo a 0
+                document.getElementById("header").style.borderBottom="none"
+                //animacion de carga
+                setTimeout(function(){
+                    document.getElementById("body").style.cursor="default";
+                    document.getElementById("send").style.cursor="default";
+                    $(".log_in").animate({
+                        height:"0px",
+                    },200)
+                    $(".log_in").fadeOut(0)
+                    $("#user").fadeOut(0)
+                    $("#button_user").fadeIn(200)
+                },2000)
+            }
+        }
+        $("#user_name").click(function(){
+            document.getElementById("user_name").style.border="2px outset rgb(119, 201, 255)" 
+            document.getElementById("password").style.border="2px outset rgb(119, 201, 255)"
+            $("#alert_user").fadeOut(1000)
+            $("#alert_password").fadeOut(1000)
+        })
+        $("#password").click(function(){
+            document.getElementById("password").style.border="2px outset rgb(119, 201, 255)" 
+            document.getElementById("user_name").style.border="2px outset rgb(119, 201, 255)"
+            $("#alert_user").fadeOut(1000)
+            $("#alert_password").fadeOut(1000)
+        })
+
+        function profile(){
+            var x=document.getElementById("button_user").value
+            if (x==1){
+                $(".profile").show(0)
+                $(".profile").animate({
+                    height:"210px",
+                },150)
+                //desabilitar el botón hasta que se termine la transicion para que no haya bug
+                document.getElementById("button_user").disabled=true
+                setTimeout(function(){
+                    document.getElementById("button_user").disabled=false
+                },200)
+                //ocultar elementos del botón de usuario
+                $("#btn_img").fadeOut(0)
+                document.getElementById("btn_txt").innerHTML="Cerrar"
+                document.getElementById("btn_txt").style.color="black"
+                document.getElementById("button_user").value="2"
+                document.getElementById("header").style.borderBottom="2px solid white"
+            }
+            else {
+                $(".profile").animate({
+                    height:"0px",
+                },150)
+                //desabilitar el botón hasta que se termine la transicion para que no haya bug
+                document.getElementById("button_user").disabled=true
+                setTimeout(function(){
+                    document.getElementById("button_user").disabled=false
+                },200)
+                $(".profile").hide(0)
+                //mostrar elementos del botón de usuario
+                $("#btn_img").fadeIn(100)
+                document.getElementById("btn_txt").innerHTML="Alex03"
+                document.getElementById("btn_txt").style.color="rgb(170, 125, 0)"
+                document.getElementById("header").style.borderBottom="none"
+                document.getElementById("button_user").value="1"
+            }
+        }
+        function log_out(){
+            document.getElementById("body").style.cursor="progress";
+            document.getElementById("log_out").style.cursor="progress";
+            //propiedades al botón iniciar sesión
+            document.getElementById("user").value="1"
+            document.getElementById("user").innerHTML="Iniciar sesión"
+            document.getElementById("user").style.backgroundColor="rgb(237, 252, 110)"
+            document.getElementById("user").style.color="rgb(170, 125, 0)"
+            document.getElementById("header").style.borderBottom="none"
+            document.getElementById("user_name").value=""
+            document.getElementById("password").value=""
+            document.getElementById("password").style.border="2px outset rgb(119, 201, 255)" 
+            document.getElementById("user_name").style.border="2px outset rgb(119, 201, 255)"
+            document.getElementById("send").style.cursor="pointer";
+            //habilitar boton enviar del boton iniciar sesion
+             document.getElementById("send").disabled=false;
+            //deshabilitar boton cerrar sesión
+            document.getElementById("log_out").disabled=true;
+            //animacion de carga
+            setTimeout(function(){
+                document.getElementById("body").style.cursor="default";
+                document.getElementById("log_out").style.cursor="default";
+                $(".log_in").animate({
+                    height:"0px",
+                },200)
+                $(".profile").fadeOut(0)
+                $("#button_user").fadeOut(0)
+                $("#user").fadeIn(200)   
+            },2000)
+        }
+    </script>
+</html>
