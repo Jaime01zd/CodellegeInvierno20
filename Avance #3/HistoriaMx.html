@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Historia mexicana</title>
+        <meta charset="UTF-8">
+        <style>
+
+            *{
+                margin: 0px;
+            }
+
+			#header {
+                width: 100%;
+                background-color: rgb(237, 252, 110);
+                position: fixed;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+
+            /*Barra de navegación*/
+            .nav {
+                padding-left: 200px;
+            }
+
+            /*Dentro de la barra de navegación*/
+			.nav li a {
+				color: rgb(170, 125, 0);
+				text-decoration:none;
+				padding: 20px 40px;
+				display:block;
+			}
+
+            /*Background a los subtemas*/
+            .nav li ul li {
+                background-color: rgb(237, 252, 110);
+                margin-left: -40px;
+            }
+
+			.nav li a:hover {
+				background-color: #43434342;
+			}
+
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+                list-style: none;
+			}
+
+			li:hover ul {
+				display:block;
+			}
+
+            .nav > li {
+                display: inline-block;
+            }
+        
+            /*Acomodado subtemas de historia*/
+            .historia li{
+                width:135px;
+                text-align: left;
+            }
+            .historia li a{
+                padding:10px 10px;
+            }
+
+            /*Acomodado subtemas de naturaleza*/
+            .naturaleza li{
+                width:157px;
+                text-align: left;
+            }
+            .naturaleza li a{
+                padding:10px 10px;
+            }
+            
+            /*Acomodado subtemas de cultura*/
+            .cultura li{
+                width:130px;
+                text-align: left;
+            }
+            .cultura li a{
+                padding:10px 10px;
+            }
+
+            /*Slider*/
+
+            .slider{
+                width:100%;
+                height:580px;
+                margin:auto;
+                overflow:hidden;
+                background-color: black;
+                padding-top:57px;
+            }
+            
+            .slider ul {
+                display:flex;
+                padding: 0;
+                width: 400%;
+                animation: cambio 20s infinite alternate;
+            }
+            
+            .slider li{
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider img {
+            width: 100%;
+            }
+            
+            @keyframes cambio {
+                0%{ margin-left:0;}
+                20%{ margin-left:0;}
+                
+                25%{ margin-left:-100%;}
+                45%{ margin-left:-100%;}
+                
+                50%{ margin-left:-200%;}
+                70%{ margin-left:-200%;}
+                
+                75%{ margin-left:-300%;}
+                100%{ margin-left:-300%;}
+            }
+            .logo_s{
+                width:100px;
+                height:30px;
+            }
+            .logo img{
+                width:150px;
+                height:58px;
+                position:absolute;
+            }
+            
+            /*footer*/
+
+            footer {
+                background-color: rgb(175, 128, 0);
+                color: #fff;
+                height: 310px;
+                font-size:21px;
+                padding-top: 20px;
+            }
+            .sep_bottom{
+                position:absolute;
+                width:15%;
+                height: 1vh;
+                background-color: white;
+                margin-top:-1%;
+            }
+            .contact{
+                margin-left:3%;
+                width: 20%;
+                float:left;
+            }
+            .contact div, .pages .footer_title, .social_media div{
+                margin-bottom: 20px;
+            }
+            .footer_title{
+                font-size: 30px;
+            }
+            .pages{
+                margin-left:20%;
+                float:left;
+                width: 20%;
+            }
+            .social_media{
+                margin-right: 3%;
+                float:right;
+                width: 17%;
+            }
+            .social_media img{
+                float:left;
+                width:30px;
+                margin-right:5%;
+                margin-top:5%;
+            }
+
+            /*Párrafos generales*/
+            p {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 23px;
+                padding: 7px;
+                margin-left: 45px;
+                color: grey;
+            }
+
+             /*Imágenes de exposición*/
+            .expo1 img {
+                margin-top: 50px;
+                margin-left: 110px;
+                width: 40%;
+                height: 20%;
+            }
+
+            .expo1 img:hover {
+                opacity: 0.8;
+            }
+
+            .expo2 img {
+                margin-top: -365px;
+                margin-bottom: 50px;
+                margin-right: 110px;
+                width: 40%;
+                height: 35%;
+                float: right;
+            }
+
+            .expo2 img:hover {
+                opacity: 0.8;
+            }
+
+            /*hr*/
+            .separador {
+                margin-top: 80px;
+                margin-left: 30px;
+                width: 95%;
+            }
+
+            .sep2 {
+                margin-left: 30px;
+                width: 95%;
+            }
+
+            .indice {
+                margin-left: 30px;
+                width: 95%;
+                margin-bottom: 35px;
+            }
+
+             /*Título de las imágenes*/
+            .pictures {
+                padding-top: 110px;
+                padding-bottom: 30px;
+                font-family: monospace Arial, Helvetica, sans-serif;
+                color: black;
+            }
+
+            /*Estilo de las imágenes*/
+            .gallery {
+            margin-left: 70px;
+            margin-top: 50px;
+            border: 1px solid #ccc;
+            width: 350px;
+            }
+
+            .gallery img {
+            width: 350px;
+            height: 250px;
+            }
+
+            .gallery2 {
+                margin-top: -305px;
+                margin-right: 500px;
+                border: 1px solid #ccc;
+                width: 350px;
+                float: right;
+            }
+
+            .gallery2 img {
+                width: 350px;
+                height: 250px;
+            }
+
+            .gallery3 {
+                margin-top: -305px;
+                margin-right: 80px;
+                border: 1px solid #ccc;
+                width: 350px;
+                float: right;
+            }
+
+            .gallery3 img {
+                width: 350px;
+                height: 250px;  
+            }
+
+            .gallery4 {
+                margin-left: 70px;
+                margin-top: 50px;
+                border: 1px solid #ccc;
+                width: 350px;
+            }
+
+            .gallery4 img {
+                width: 350px;
+                height: 250px;  
+            }
+
+            .desc {
+            padding: 15px;
+            font-family: Georgia, Arial serif;
+            text-align: center;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+            <!--Barra de navegación-->
+
+        <div id="header">
+            <nav> 
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Historia</a>
+                        <ul class="historia">
+                            <li><a href="">Fosiles</a></li>
+                            <li><a href="">Historia mexicana</a></li>
+                            <li><a href="">Historia del mundo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Naturaleza</a>
+                        <ul class="naturaleza">
+                            <li><a href="">Flora</a></li>
+                            <li><a href="">Fauna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Cultura</a>
+                        <ul class="cultura">
+                            <li><a href="">Arte</a></li>
+                            <li><a href="">Cine</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Recorridos y Programas</a></li>
+                </ul>
+            </nav>
+        </div>             <!--Aquí termina la barra de navegación-->
+
+            <div class="slider"> 
+                 <ul>
+                    <li><img src="thumb.jpg" alt="Chichen Itza"></li>
+                    <li><img src="teh.jpg" alt="Tenochtitlán"></li>
+                    <li><img src="wall.jpg" alt="Calendario azteca"></li>
+                    <li><img src="thumb.jpg" alt="Chichen Itza"></li>
+                 </ul>
+            </div>
+
+            <!--Contenido de la página-->
+
+            <div class="expo1">
+                <img src="cmx.jpeg" alt="Conquista de México">
+            </div>
+
+            <div class="expo2">
+                <img src="ind.jpg" alt="Independencia de México">
+            </div>
+            
+            <hr class="separador">
+            <p>Conoce acerca de la historia de nuestro país con una exposición de más de 100 piezas</p>
+            <hr class="sep2">
+
+            <p class="pictures">Historia de México</p>
+            <hr class="indice">
+
+            <div class="gallery">
+                <img src="epoca.jpg" alt="Época colonial">
+                <div class="desc">Época colonial</div>
+            </div>
+
+            <div class="gallery2">
+                <img src="Tenochtitlan.jpg" alt="Tenochtitlán">
+                <div class="desc">Fundación de Tenochtitlán</div>
+            </div>
+
+            <div class="gallery3">
+                <img src="rev.jpg" alt="Revolución Mexicana">
+                <div class="desc">Revolución Mexicana</div>
+            </div>
+
+            <div class="gallery4">
+                <img src="cal.jpg" alt="Calendario Azteca">
+                <div class="desc">Civilizaciones mesoamericanas</div>
+            </div>
+
+            <!--Fin del contenido-->
+
+            <footer>
+                <div class="contact">
+                    <div class="footer_title">Contacto</div>
+                    <div class="sep_bottom"></div>
+                    <div >
+                        Direccion: JQM8+24 Cerro de La Silla, Nuevo León, Guadalupe
+                    </div>
+                    <div>
+                        Numero: +81 555 6507156
+                    </div>
+                </div>
+                <div class="pages">
+                    <div class="footer_title">Paginas </div>
+                    <div class="sep_bottom"></div>
+                    <div>Fósiles</div>
+                    <div>Hisoria Mexicana</div>
+                    <div>Historia del mundo</div>
+                    <div>Flora</div>
+                    <div>Fauna</div>
+                    <div>Arte</div>
+                    <div>Cine</div>
+                    <div>Escuelas de verano</div>
+                    <div>Recorridos y programas</div>
+                </div>
+                <div class="social_media">
+                    <div class="footer_title">Redes sociales</div>
+                    <div class="sep_bottom"></div>
+                    <div><img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" alt=""></div>
+                    <div><img src="https://cdn.icon-icons.com/icons2/220/PNG/512/facebook_25551.png" alt=""></div>
+                    <div><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt=""></div>
+                    <div><img src="https://img.icons8.com/color/480/gmail.png" alt=""></div>
+                </div>
+            </footer>    
+    </body>
+</html>
