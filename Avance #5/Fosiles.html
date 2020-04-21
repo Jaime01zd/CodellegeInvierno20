@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fosiles</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css.css">
+        <style>
+            *{
+                margin: 0px;
+            }
+            figure  {
+            height:800px;
+            width:1200px;
+            }            
+            span{
+            display:block;
+            }            
+            body{
+                overflow-y: scroll; 
+                margin: 0px;
+                background-color:linen;
+                }
+
+            #Lucy{
+            text-align:justify;
+            font-family:Courier New;    
+            font-size:small;
+            line-height:1.6;
+  
+                
+            }
+            #titulo
+            {
+            font-family:Courier New;
+            margin:80px 0px;
+            text-align:center;
+            width:100%;
+            height:40px;
+            font-size:200%;    
+            
+            }
+
+			#header {
+                margin:0px;
+                width: 100%;
+                background-color: rgb(237, 252, 110);
+                position:absolute;
+				font-family: Arial, Helvetica, sans-serif;
+			}            
+
+            
+            /*barra de navegación*/
+            .nav{
+                
+                padding-left: 200px;
+            }
+            /*todo lo que está dentro de ella*/
+			.nav li a {
+				color:rgb(170, 125, 0);
+				text-decoration:none;
+				padding:20px 40px;
+				display:block;
+			}
+            /*ponerle background a los subtemas*/
+            .nav li ul li  {
+                background-color: rgb(237, 252, 110);
+                margin-left: -40px ;
+            }
+            
+			.nav li a:hover {
+				background-color:#43434342;
+
+			}
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:1  0px;
+                list-style: none;
+			}
+
+			li:hover ul {
+				display:block;
+			}
+
+            .nav > li {
+                display: inline-block;
+            }
+
+            figcaption{
+                
+         background-color:red;
+                text-align: center;
+                width: 100%;
+                height:100px;
+            }
+
+            /*acomodar subtemas de historia*/
+            .historia li{
+                width:135px;
+                text-align: left;
+            }
+            .historia li a{
+                padding:10px 10px;
+            }
+            /*acomodar subtemas de naturaleza*/
+            .naturaleza li{
+                width:157px;
+                text-align: left;
+            }
+            .naturaleza li a{
+                padding:10px 10px;
+            }
+            /*acomodar subtemas de cultura*/
+            .cultura li{
+                width:130px;
+                text-align: left;
+            }
+            .cultura li a{
+                padding:10px 10px;
+            }
+
+            /*slider*/
+ @keyframes cambio {
+                0%{ margin-left:0;}
+                20%{ margin-left:0;}
+                
+                25%{ margin-left:-100%;}
+                45%{ margin-left:-100%;}
+                
+                50%{ margin-left:-200%;}
+                70%{ margin-left:-200%;}
+                
+                75%{ margin-left:-300%;}
+                100%{ margin-left:-300%;}
+                  }
+            
+
+            
+            .slider{
+                margin:50px;
+            background-color:linen;
+                width:800px;
+                height:600px;
+                
+                
+                
+            }
+                        .slider ul {
+                display:flex;
+                padding: 0;
+                width: 400%;
+                animation: cambio 20s infinite alternate;
+            }
+            
+            .slider li{
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider img {
+            width: 75%;
+            }
+            
+            .logo img{
+                width:150px;
+                height:58px;
+                position:absolute;
+            }
+            
+
+            .tsubtema{
+            
+            text-align:center;
+            font-family:Courier New;   
+            font-size:150%;
+            width:100%;
+            height:75px;
+                
+            padding:40px;
+                background-color:green;
+             
+            
+            }
+            .psubtema{
+            text-align:justify;
+            font-family:Courier New;   
+            font-size:125%;
+            width:75%;                
+            }
+            .imagen{
+            background-color:rgb(155,155,155);
+            width:800px;
+            height:600px;    
+            
+            }            
+    
+            .n{
+            margin:0px;
+            }
+        
+        </style>
+    </head>
+        <body>
+       
+            <!--Barra de bùsqueda-->
+            
+            <header>
+                <div id="header" >
+                    <nav> 
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Historia</a>
+                        <ul class="historia">
+                            <li><a href="">Fosiles</a></li>
+                            <li><a href="">Historia mexicana</a></li>
+                            <li><a href="">Historia del mundo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Naturaleza</a>
+                        <ul class="naturaleza">
+                            <li><a href="">Flora</a></li>
+                            <li><a href="">Fauna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Cultura</a>
+                        <ul class="cultura">
+                            <li><a href="">Arte</a></li>
+                            <li><a href="">Cine</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Recorridos y Programas</a></li>
+                </ul>
+            </nav>
+        </div>
+            </header>
+      <!-- Fin barra de bùsqueda-->
+     <p class="n">12334</p>
+            
+            <article>
+              <section>
+               <center>
+                <h1 id="titulo">
+                  Museo Cerro de la Silla: <span>Fòsiles encontrados en Mèxico</span>          
+                </h1>
+              </center>
+             </section> <!--Titulo-->  
+              <section><!--Inicio del primer fòsil-->
+               <center>
+                <div > <!--Imàgen del 1er fòsil-->
+                 <figure >
+                     <img src="https://img.culturacolectiva.com/featured/2018/06/12/1528851674694/dinosaurio-en-coahuila-medium.jpg" 
+                      class="imagen" alt="1er fosil imagen">
+                     <figcaption>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<!--Leyenda de la imàgen del 1er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 1er fòsil-->
+              </center>
+                  <h3 class="tsubtema">
+                  Lorem ipsum <!--Titulo del primer fòsil-->
+                  </h3>   
+              <center>
+                  <p class="psubtema">
+<span>                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span> <!--Texto del primer fòsil-->
+              
+                   <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
+     <span>   </span>      
+
+                      <span>               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
+
+                  </p>   
+              </center>    
+             </section><!--Fin del primer fòsil-->
+              <section><!--Inicio del segundo fòsil-->
+               <center>
+                <div > <!--Imàgen del segundo fòsil-->
+                 <figure >
+                     <img src="https://static.jornadabc.mx/cdn/farfuture/3ENFJrAYty_aCn-D8yNvvDASij1LNfdQWDg6lcIdwFs/mtime:1425089314/sites/default/files/images/41130218.jpg" 
+                      class="imagen" alt="segundo fosil imagen">
+                     <figcaption>
+                          Leyenda de la imagen <!--Leyenda de la imàgen del segundo fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del segundo fòsil-->
+              </center>
+                  <h3 class="tsubtema">
+                  Titulo de segundo fosil<!--Titulo del segundo fòsil-->
+                  </h3>   
+              <center>
+                  <p class="psubtema">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</span> <!--Texto del segundo fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del segundo fòsil-->
+              <section><!--Inicio del tercer fòsil-->
+               <center>
+                <div> <!--Imàgen del 3er fòsil-->
+                 <figure >
+                     <img src="https://www.mexicodesconocido.com.mx/sites/default/files/nodes/491/fosil.jpg" 
+                      class="imagen" alt="tercer fosil imagen">
+                     <figcaption>
+                          Leyenda de la imagen <!--Leyenda de la imàgen del 3er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 3er fòsil-->
+              </center>
+                  <h3 class="tsubtema">
+                  Titulo de tercer fosil<!--Titulo del tercer fòsil-->
+                  </h3>   
+              <center>
+                  <p class="psubtema">
+                   Texto de tercer fosil  <!--Texto del tercer fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del tercer fòsil-->
+              <section><!--Inicio del cuarto fòsil-->
+               <center>
+                <div> <!--Imàgen del 4 fòsil-->
+                 <figure >
+                     <img src="https://www.portalpolitico.tv/sites/portalpolitico.tv/files/styles/width_800/public/photos/noticia/00126567-original.jpeg?itok=CXwhRtGA" 
+                      class="imagen" alt="tercer fosil imagen">
+                     <figcaption>
+                          Leyenda de la imagen <!--Leyenda de la imàgen del 4er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 4er fòsil-->
+              </center>
+                  <h3 class="tsubtema">
+                  Titulo de tercer fosil<!--Titulo del 4 fòsil-->
+                  </h3>   
+              <center>
+                  <p class="psubtema">
+                   Texto de tercer fosil  <!--Texto del 4 fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del 4 fòsil-->                
+                 <center>
+                     <section>
+                    <div class="slider">
+                       <ul>
+                        <li><a href=""><img src="https://img.culturacolectiva.com/featured/2018/06/12/1528851674694/dinosaurio-en-coahuila-medium.jpg" class="imagen" alt="1er fòsil"> </a></li>
+                           
+                         <li><a href=""><img src="https://www.portalpolitico.tv/sites/portalpolitico.tv/files/styles/width_800/public/photos/noticia/00126567-original.jpeg?itok=CXwhRtGA" class="imagen" alt="1er fòsil"> </a></li>                          
+               
+                           
+                           
+                       <li><a  href=""><img src="https://static.jornadabc.mx/cdn/farfuture/3ENFJrAYty_aCn-D8yNvvDASij1LNfdQWDg6lcIdwFs/mtime:1425089314/sites/default/files/images/41130218.jpg" class="imagen" alt="instalaciones"></a> </li>
+                           
+                           
+                    <li><a href=""><img src="https://www.mexicodesconocido.com.mx/sites/default/files/nodes/491/fosil.jpg" class="imagen" alt="instalaciones"> </a></li>
+            </ul> 
+        </div>    
+                     </section>    
+                 </center>    
+            </article>
+           <footer>
+            <div class="contact">
+                <div class="footer_title">Contacto</div>
+                <div class="sep_bottom"></div>
+                <div >
+                    Direccion: JQM8+24 Cerro de La Silla, Nuevo León, Guadalupe
+                </div>
+                <div>
+                    Numero: +81 555 6507156
+                </div>
+            </div>
+            <div class="pages">
+                <div class="footer_title">Paginas </div>
+                <div class="sep_bottom"></div>
+                <div>Pàgina Actual</div>
+                <div>Hisoria Mexicana</div>
+                <div>Historia del mundo</div>
+                <div>Flora</div>
+                <div>Fauna</div>
+                <div>Arte</div>
+                <div>Cine</div>
+                <div>Escuelas de verano</div>
+                <div>Recorridos y programas</div>
+            </div>
+            <div class="social_media">
+                <div class="footer_title">Redes sociales</div>
+                <div class="sep_bottom"></div>
+                <div><img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" alt="Instagram"></div>
+                <div><img src="https://cdn.icon-icons.com/icons2/220/PNG/512/facebook_25551.png" alt="Facebook"></div>
+                <div><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt="Twitter"></div>
+                <div><img src="https://img.icons8.com/color/480/gmail.png" alt="Gmail"></div>
+            </div>
+        </footer>            
+            
+            
+            </body>
+</html> 
