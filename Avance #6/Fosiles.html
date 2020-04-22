@@ -3,9 +3,20 @@
     <head>
         <title>Fosiles</title>
         <meta charset="UTF-8">
+        
         <style>
 
+        .actividades li{
+            width:162px;
+            text-align: left;
+        }
+        .actividades li a{
+            padding:10px 10px;
+        }            hr{
             
+            margin:20px;
+            
+            }
             *{
                 margin: 0px;
             }
@@ -120,6 +131,350 @@
             }
 
             /*slider*/
+*{
+    margin: 0px;
+}
+
+#header {
+    width: 100%;
+    height: 58px;
+    background-color: rgb(237, 252, 110);
+    position:fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*barra de navegación*/
+
+.nav{
+    padding-left: 200px;
+}
+/*todo lo que está dentro de ella*/
+.nav li a {
+    color:rgb(170, 125, 0);
+    text-decoration:none;
+    padding:20px 40px;
+    display:block;
+}
+/*ponerle background a los subtemas*/
+.nav li ul li  {
+    background-color: rgb(237, 252, 110);
+    margin-left: -40px;
+}
+
+.nav li a:hover {
+    background-color:#43434342;
+
+}
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    list-style: none;
+}
+
+li:hover ul {
+    display:block;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.img img {
+    width: 1349px;
+    height: 900px;
+}
+
+/*acomodar subtemas de historia*/
+.historia li{
+    width:135px;
+    text-align: left;
+}
+.historia li a{
+    padding:10px 10px;
+}
+/*acomodar subtemas de naturaleza*/
+.naturaleza li{
+    width:157px;
+    text-align: left;
+}
+.naturaleza li a{
+    padding:10px 10px;
+}
+/*acomodar subtemas de cultura*/
+.cultura li{
+    width:130px;
+    text-align: left;
+}
+.cultura li a{
+    padding:10px 10px;
+}
+
+/* USUARIO */
+
+.user{
+    margin-top:-47px;
+    float:right;
+    padding-right:100px;
+    z-index: 1;
+}
+.user .button_log_in{
+    width:160px;
+    height:40px;
+    background-color: rgb(237, 252, 110);
+    cursor:pointer;
+    border:none;
+    font-size:20px;
+    color:rgb(170, 125, 0);
+}
+.user .button_log_in:active{
+    border:2px solid white;
+}
+
+/*Pantalla para ingresar usuario*/
+
+.log_in{
+    display:none;
+    float:right;
+    margin-top:-10px;
+    width:260px;
+    height:0px;
+    background-color: rgb(255, 255, 255);
+    margin-right:60px;
+    text-align: center;
+}
+.log_in div{
+    font-size:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:30px;
+    margin-bottom:20px;
+    text-align: left;
+}
+.user_title, .password_title{
+    margin-left:10%;
+}
+.log_in input{
+    width:200px;
+    height: 25px;
+    border:2px outset rgb(119, 201, 255);
+    text-align: center;
+    font-size:18px;
+}
+.log_in button{
+    width:100px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(0, 0, 0);
+    cursor:hand;
+    margin-left:120px;
+    margin-top:20px;
+}
+
+/*animacion para los inputs*/
+
+.user .button_log_in:hover{
+    background-color: rgba(0, 0, 0, 0.075) ;
+}
+input:focus{
+    animation: hola 2s infinite;
+}
+@keyframes hola {
+    50%{border:2px outset rgb(97, 255, 97);}
+}
+.log_in .send{
+    border:2px outset rgb(119, 201, 255);
+    cursor:pointer;
+}
+.send:hover{
+    background-color: rgb(145, 193, 255);
+    color:white;
+}
+.send:active{
+    border: 2px outset rgb(89, 160, 253);
+}
+
+/* ALERTAS */
+
+.alert_user, .alert_password{
+    position: absolute;
+    text-align: left;
+
+}
+.alert_user p{
+    font-size: 15px;
+    margin-top:-25px;
+    margin-left:22px;
+    color:red;
+}
+.alert_password p{
+    font-size: 15px;
+    margin-top:-25px;
+    margin-left:22px;
+    color:red;
+}
+#alert_user, #alert_password{
+    display:none;
+}
+/*perfil del usuario*/
+.user .button_user{
+    width:210px;
+    height:50px;
+    background-color: rgb(255, 255, 254);
+    cursor:pointer;
+    border:none;
+    font-size:20px;
+    color:rgb(170, 125, 0);
+    line-height: 50px;
+    margin-top:-7px;
+    border:2px solid white;
+    margin-right:-50px;
+    display:none;
+}
+.user .button_user:active{
+    border:2px solid white;
+}
+
+.user .button_user img{
+    float:left;
+    width:80px;
+    height:45px
+}
+.profile{
+    float:right;
+    margin-top:-7px;
+    width:210px;
+    height:0px;
+    background-color: rgb(255, 255, 255);
+    margin-right:50px;
+    display:none;
+}
+.img_profile{
+    margin-top:10px;
+    width: 200px;
+    margin-left:5px;
+}
+.second_part{
+    background-color: black;
+    width:98%;
+    color:white;
+    height:83px;
+    border:2px solid white;
+}
+.user_name_profile{
+    font-size:18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top:5px;
+    padding-left:10px;
+}
+.log_out{
+    margin-top:20px;
+    float: right;
+    margin-right:10px;
+    height: 30px;
+    cursor: pointer;
+    background-color:black;
+    border:none;
+    color:white;
+}
+.log_out:active{
+    border:1px outset rgb(89, 160, 253);
+}
+
+/*slider*/
+
+.slider{
+    width:100%;
+    height: 580px;
+    margin:auto;
+    overflow:hidden;
+    background-color: black;
+    padding-top:57px;
+}
+
+.slider ul {
+    display:flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+width: 100%;
+}
+
+@keyframes cambio {
+    0%{ margin-left:0;}
+    20%{ margin-left:0;}
+    
+    25%{ margin-left:-100%;}
+    45%{ margin-left:-100%;}
+    
+    50%{ margin-left:-200%;}
+    70%{ margin-left:-200%;}
+    
+    75%{ margin-left:-300%;}
+    100%{ margin-left:-300%;}
+}
+.logo_s{
+    width:100px;
+    height:30px;
+}
+.logo img{
+    width:150px;
+    height:58px;
+    position:absolute;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: rgb(175, 128, 0);
+    color: #fff;
+    height: 310px;
+    font-size:21px;
+    padding-top: 20px;
+}
+.sep_bottom{
+    position:absolute;
+    width:15%;
+    height: 1vh;
+    background-color: white;
+    margin-top:-1%;
+}
+.contact{
+    margin-left:3%;
+    width: 20%;
+    float:left;
+}
+.contact div, .pages .footer_title, .social_media div{
+    margin-bottom: 20px;
+}
+.footer_title{
+    font-size: 30px;
+}
+.pages{
+    margin-left:20%;
+    float:left;
+    width: 20%;
+}
+.social_media{
+    margin-right: 3%;
+    float:right;
+    width: 17%;
+}
+.social_media img{
+    float:left;
+    width:30px;
+    margin-right:5%;
+    margin-top:5%;
+}
+
  @keyframes cambio {
                 0%{ margin-left:0;}
                 20%{ margin-left:0;}
@@ -137,9 +492,9 @@
             
             .slider{
                 margin:50px;
-            background-color:rgba(210,210,0,.5);
+            background-color:rgba(210,215,90,.85);
                 width:800px;
-                height:475px;
+                height:550px;
                 border-radius:15px;
                 box-shadow:
                     20px 20px 10px 0px rgba(0,0,0,0.5) ;
@@ -196,7 +551,9 @@
             .imageno{
             background-color:rgb(155,155,155);
             width:600px;
-            height:400px;    
+            height:400px; 
+                border:2px solid rgba(155,155,155,.75);
+                
             border-radius:30%;
                 margin:50px;
             } 
@@ -234,7 +591,12 @@
                             <li><a href="">Cine</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Recorridos y Programas</a></li>
+                          <li> <a href="">Actividades</a>
+                <ul  class="actividades">
+                    <li><a href="Programas_recorridos.html"> Programas y Recorridos </a></li>
+                    <li><a href="Esc_verano.html">Escuela de verano </a></li>
+                </ul>
+            </li>
                 </ul>
             </nav>
         </div>
@@ -249,106 +611,10 @@
                   Museo Cerro de la Silla: <span>Fòsiles encontrados en Mèxico</span>          
                 </h1>
               </center>
+                  <hr>
              </section> <!--Titulo-->  
-              <section><!--Inicio del primer fòsil-->
-               <center>
-                <div > <!--Imàgen del 1er fòsil-->
-                 <figure >
-                     <img src="https://img.culturacolectiva.com/featured/2018/06/12/1528851674694/dinosaurio-en-coahuila-medium.jpg" 
-                      class="imagen" alt="1er fosil imagen">
-                     <figcaption>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<!--Leyenda de la imàgen del 1er fòsil-->
-                     </figcaption>
-                 </figure>    
-                </div><!--Fin de la imàgen del 1er fòsil-->
-              </center>
-                  <center>
-                  <h3 class="tsubtema">
-                  Lorem ipsum <!--Titulo del primer fòsil-->
-                  </h3>   
-                      </center>
-              <center>
-                  <p class="psubtema">
-<span>                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span> <!--Texto del primer fòsil-->
-              
-                   <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
-     <span>   </span>      
-
-                      <span>               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
-
-                  </p>   
-              </center>    
-             </section><!--Fin del primer fòsil-->
-              <section><!--Inicio del segundo fòsil-->
-               <center>
-                <div > <!--Imàgen del segundo fòsil-->
-                 <figure >
-                     <img src="https://static.jornadabc.mx/cdn/farfuture/3ENFJrAYty_aCn-D8yNvvDASij1LNfdQWDg6lcIdwFs/mtime:1425089314/sites/default/files/images/41130218.jpg" 
-                      class="imagen" alt="segundo fosil imagen">
-                     <figcaption>
-                          Leyenda de la imagen <!--Leyenda de la imàgen del segundo fòsil-->
-                     </figcaption>
-                 </figure>    
-                </div><!--Fin de la imàgen del segundo fòsil-->
-              </center>
-                  <center>
-                  <h3 class="tsubtema">
-                  Titulo de segundo fosil<!--Titulo del segundo fòsil-->
-                  </h3>   
-                      </center>
-              <center>
-                  <p class="psubtema">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</span> <!--Texto del segundo fòsil-->
-                  </p>    
-              </center>    
-             </section><!--Fin del segundo fòsil-->
-              <section><!--Inicio del tercer fòsil-->
-               <center>
-                <div> <!--Imàgen del 3er fòsil-->
-                 <figure >
-                     <img src="https://www.mexicodesconocido.com.mx/sites/default/files/nodes/491/fosil.jpg" 
-                      class="imagen" alt="tercer fosil imagen">
-                     <figcaption>
-                          Leyenda de la imagen <!--Leyenda de la imàgen del 3er fòsil-->
-                     </figcaption>
-                 </figure>    
-                </div><!--Fin de la imàgen del 3er fòsil-->
-              </center>
-                  <center>
-                  <h3 class="tsubtema">
-                  Titulo de tercer fosil<!--Titulo del tercer fòsil-->
-                  </h3>   
-                      </center>
-              <center>
-                  <p class="psubtema">
-                   Texto de tercer fosil  <!--Texto del tercer fòsil-->
-                  </p>    
-              </center>    
-             </section><!--Fin del tercer fòsil-->
-              <section><!--Inicio del cuarto fòsil-->
-               <center>
-                <div> <!--Imàgen del 4 fòsil-->
-                 <figure >
-                     <img src="https://www.portalpolitico.tv/sites/portalpolitico.tv/files/styles/width_800/public/photos/noticia/00126567-original.jpeg?itok=CXwhRtGA" 
-                      class="imagen" alt="tercer fosil imagen">
-                     <figcaption>
-                          Leyenda de la imagen <!--Leyenda de la imàgen del 4er fòsil-->
-                     </figcaption>
-                 </figure>    
-                </div><!--Fin de la imàgen del 4er fòsil-->
-              </center>
-                  <center>
-                  <h3 class="tsubtema">
-                  Titulo de tercer fosil<!--Titulo del 4 fòsil-->
-                  </h3>
-                    </center>  
-              <center>
-                  <p class="psubtema">
-                   Texto de tercer fosil  <!--Texto del 4 fòsil-->
-                  </p>    
-              </center>    
-             </section><!--Fin del 4 fòsil-->                
-                 <center>
+                
+                               <center>
                      <section>
                     <div class="slider">
                        <ul>
@@ -365,7 +631,118 @@
             </ul> 
         </div>    
                      </section>    
-                 </center>    
+                 </center> 
+                <hr>
+                
+              <section><!--Inicio del primer fòsil-->
+               <center>
+                <div > <!--Imàgen del 1er fòsil-->
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Lorem ipsum <!--Titulo del primer fòsil-->
+                  </h3>   
+                      
+                      </center>
+                      <figure >
+                     <img src="https://img.culturacolectiva.com/featured/2018/06/12/1528851674694/dinosaurio-en-coahuila-medium.jpg" 
+                      class="imagen" alt="1er fosil imagen">
+                     <figcaption>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<!--Leyenda de la imàgen del 1er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 1er fòsil-->
+              </center>
+              <center>
+                  <p class="psubtema">
+<span>                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span> <!--Texto del primer fòsil-->
+              
+                   <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
+     <span>   </span>      
+
+                      <span>               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
+
+                  </p>   
+              </center>    
+             </section><!--Fin del primer fòsil-->
+                <hr>
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Lorem Ipsum Lorem<!--Titulo del segundo fòsil-->
+                  </h3>   
+                      </center>
+                              <section><!--Inicio del segundo fòsil-->
+               <center>
+                <div > <!--Imàgen del segundo fòsil-->
+                 <figure >
+                     <img src="https://static.jornadabc.mx/cdn/farfuture/3ENFJrAYty_aCn-D8yNvvDASij1LNfdQWDg6lcIdwFs/mtime:1425089314/sites/default/files/images/41130218.jpg" 
+                      class="imagen" alt="segundo fosil imagen">
+                     <figcaption>
+                          Leyenda de la imagen <!--Leyenda de la imàgen del segundo fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del segundo fòsil-->
+              </center>
+              <center>
+                  <p class="psubtema">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</span> <!--Texto del segundo fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del segundo fòsil-->
+                <hr>
+              <section><!--Inicio del tercer fòsil-->
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Lorem Ipsum Lorem Ipsum<!--Titulo del tercer fòsil-->
+                  </h3>   
+                      </center>
+                                  <center>
+                <div> <!--Imàgen del 3er fòsil-->
+                 <figure >
+                     <img src="https://www.mexicodesconocido.com.mx/sites/default/files/nodes/491/fosil.jpg" 
+                      class="imagen" alt="tercer fosil imagen">
+                     <figcaption>
+                          dorime ameno ameno <!--Leyenda de la imàgen del 3er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 3er fòsil-->
+              </center>
+              <center>
+                  <p class="psubtema">
+                 Au sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum as tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum. . <!--Texto del tercer fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del tercer fòsil-->
+                <hr>
+              <section><!--Inicio del cuarto fòsil-->
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Taiataualcsdmcosoasdsadal<!--Titulo del 4 fòsil-->
+                  </h3>
+                    </center>  
+                             <center>
+                <div> <!--Imàgen del 4 fòsil-->
+                 <figure >
+                     <img src="https://www.portalpolitico.tv/sites/portalpolitico.tv/files/styles/width_800/public/photos/noticia/00126567-original.jpeg?itok=CXwhRtGA" 
+                      class="imagen" alt="tercer fosil imagen">
+                     <figcaption>
+                          Leyenda de la imagen <!--Leyenda de la imàgen del 4er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 4er fòsil-->
+              </center>
+                  
+                  <center>
+ 
+                  <p class="psubtema">
+                   Au sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum as tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum. .  <!--Texto del 4 fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del 4 fòsil-->                
+ <hr>
             </article>
            <footer>
             <div class="contact">
@@ -381,6 +758,7 @@
             <div class="pages">
                 <div class="footer_title">Paginas </div>
                 <div class="sep_bottom"></div>
+                <div>Pàgina Principal</div>
                 <div>Pàgina Actual</div>
                 <div>Hisoria Mexicana</div>
                 <div>Historia del mundo</div>
@@ -400,7 +778,9 @@
                 <div><img src="https://img.icons8.com/color/480/gmail.png" alt="Gmail"></div>
             </div>
         </footer>            
-    </body>
+            
+            
+            </body>
 </html> 
 
 
