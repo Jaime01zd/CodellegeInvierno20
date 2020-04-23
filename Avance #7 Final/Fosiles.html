@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fosiles</title>
+        <meta charset="UTF-8">
+        <style>
+            .logo_s{
+    width:100px;
+    height:30px;
+}
+.logo img{
+    width:150px;
+    height:58px;
+    position:absolute;
+}
+        
+            .foot{
+                position: absolute;   
+            }
+ a:link {
+                text-decoration: none;
+                color:white;
+            }
+            
+
+            /* visited link */
+            a:visited {
+              color: white;
+            }
+
+            /* mouse over link */
+            a:hover {
+              color: black;
+            }
+
+            /* selected link */
+            a:active {
+              color: white;
+            }
+            
+            #Name{
+                margin:1%;
+                
+            }
+            
+            #Phone{
+                margin:1%;
+                
+                
+            }
+
+            #textArea{
+                margin:0%;
+                
+                
+            }
+            
+            #c{
+                margin:10px;
+            }
+            
+            #e{
+             margin:0%;   
+            }
+            
+            
+            .button {
+              background-color: white;
+              border: none;
+              color: black;
+              padding: 8px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin:0%;
+            }
+            
+            textarea {
+              padding: 0px;
+              box-sizing: border-box;
+              border: 2px solid #ccc;
+              border-radius: 4px;
+              background-color: #f8f8f8;
+              resize: none;
+            }
+            
+            .tA{
+                margin:1%;
+            }
+            
+            input[type=text] {
+              border: 2px solid #ccc;
+              border-radius: 4px;
+              background-color: #f8f8f8;
+            }
+            
+            .c{
+                height:35px;
+                background-color:rgb(175, 128, 0);
+                margin:2%;
+                
+            }
+            
+            .button:active {
+              background-color: black;
+              color:white;
+            }
+            
+            .button:hover {
+              background-color: black;
+              color:white;
+            }
+            
+            
+      
+        .actividades li{
+            width:162px;
+            text-align: left;
+        }
+        .actividades li a{
+            padding:10px 10px;
+        }            hr{
+            
+            margin:20px;
+            
+            }
+            *{
+                margin: 0px;
+            }
+            figure  {
+            height:800px;
+            width:1200px;
+            }            
+            span{
+            display:block;
+            }            
+            body{
+                overflow-y: scroll; 
+                margin: 0px;
+                background-color:linen;
+                }
+
+            #Lucy{
+            text-align:justify;
+            font-family:Courier New;    
+            font-size:small;
+            line-height:1.6;
+  
+                
+            }
+            #titulo
+            {
+            font-family:Courier New;
+            margin:80px 0px;
+            text-align:center;
+            width:100%;
+            height:40px;
+            font-size:200%;    
+            
+            }
+
+			#header {
+                height:58px;
+                margin:0px;
+                width: 100%;
+                background-color: rgb(237, 252, 110);
+                position:absolute;
+				font-family: Arial, Helvetica, sans-serif;
+			}            
+
+            
+            /*barra de navegación*/
+            .nav{
+                
+                padding-left: 200px;
+            }
+            /*todo lo que está dentro de ella*/
+			.nav li a {
+				color:rgb(170, 125, 0);
+				text-decoration:none;
+				padding:20px 40px;
+				display:block;
+			}
+            /*ponerle background a los subtemas*/
+            .nav li ul li  {
+                background-color: rgb(237, 252, 110);
+                margin-left: -40px ;
+            }
+            
+			.nav li a:hover {
+				background-color:#43434342;
+
+			}
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:1  0px;
+                list-style: none;
+			}
+
+			li:hover ul {
+				display:block;
+			}
+
+            .nav > li {
+                display: inline-block;
+            }
+
+            figcaption{
+
+                text-align: center;
+                width: 100%;
+                height:100px;
+            }
+
+            /*acomodar subtemas de historia*/
+            .historia li{
+                width:135px;
+                text-align: left;
+            }
+            .historia li a{
+                padding:10px 10px;
+            }
+            /*acomodar subtemas de naturaleza*/
+            .naturaleza li{
+                width:157px;
+                text-align: left;
+            }
+            .naturaleza li a{
+                padding:10px 10px;
+            }
+            /*acomodar subtemas de cultura*/
+            .cultura li{
+                width:130px;
+                text-align: left;
+            }
+            .cultura li a{
+                padding:10px 10px;
+            }
+
+            /*slider*/
+ @keyframes cambio {
+                0%{ margin-left:0;}
+                20%{ margin-left:0;}
+                
+                25%{ margin-left:-100%;}
+                45%{ margin-left:-100%;}
+                
+                50%{ margin-left:-200%;}
+                70%{ margin-left:-200%;}
+                
+                75%{ margin-left:-300%;}
+                100%{ margin-left:-300%;}
+                  }
+  
+            
+            .slider{
+        overflow:hidden;
+                margin:50px;
+            background-color:rgba(210,215,90,.85);
+                width:800px;
+                height:550px;
+                border-radius:15px;
+                box-shadow:
+                    20px 20px 10px 0px rgba(0,0,0,0.5) ;
+            }
+                        .slider ul {
+                            
+                display:flex;
+                padding: 0;
+                width: 400%;
+                animation: cambio 20s infinite alternate;
+            }
+            
+            .slider li{
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider img {
+            width: 75%;
+            }
+            
+s
+
+            .tsubtema{
+            
+            text-align:center;
+            font-family:Courier New;   
+            font-size:300%;
+            width:80%;
+            height:75px;
+                
+            padding:40px;
+     
+             
+            
+            }
+            .psubtema{
+            text-align:justify;
+            font-family:Courier New;   
+            font-size:125%;
+            width:75%;                
+            }
+            .imagen{
+            background-color:rgb(155,155,155);
+            width:800px;
+            height:600px;    
+            margin:50px;
+            }
+            .imageno{
+            background-color:rgb(155,155,155);
+            width:600px;
+            height:400px; 
+                border:2px solid rgba(155,155,155,.75);
+                
+            border-radius:30%;
+                margin:50px;
+            } 
+            
+footer {
+            background-color: rgb(175, 128, 0);
+            color: #fff;
+            height: 390px;
+            font-size:21px;
+            padding-top: 20px;
+        }
+        .sep_bottom{
+            position:absolute;
+            width:15%;
+            height: 1vh;
+            background-color: white;
+            margin-top:-1%;
+        }
+        .contact{
+            margin-left:3%;
+            width: 20%;
+            float:left;
+        }
+        .contact div, .pages .footer_title, .social_media div{
+            margin-bottom: 20px;
+        }
+        .footer_title{
+            font-size: 30px;
+        }
+        .pages{
+            margin-left:20%;
+            float:left;
+            width: 20%;
+        }
+        .social_media{
+            margin-right: 3%;
+            float:right;
+            width: 17%;
+        }
+        .social_media img{
+            float:left;
+            width:30px;
+            margin-right:5%;
+            margin-top:5%;
+        }
+
+
+   </style>
+    </head>
+        <body>
+       
+            <!--Barra de bùsqueda-->
+            
+            <header>
+                <div id="header" >
+                    <nav> 
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <ul class="nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Historia</a>
+                        <ul class="historia">
+                            <li><a href="">Fosiles</a></li>
+                            <li><a href="">Historia mexicana</a></li>
+                            <li><a href="">Historia del mundo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Naturaleza</a>
+                        <ul class="naturaleza">
+                            <li><a href="">Flora</a></li>
+                            <li><a href="">Fauna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Cultura</a>
+                        <ul class="cultura">
+                            <li><a href="">Arte</a></li>
+                            <li><a href="">Cine</a></li>
+                        </ul>
+                    </li>
+                          <li> <a href="">Actividades</a>
+                <ul  class="actividades">
+                    <li><a href="Programas_recorridos.html"> Programas y Recorridos </a></li>
+                    <li><a href="Esc_verano.html">Escuela de verano </a></li>
+                </ul>
+            </li>
+                </ul>
+            </nav>
+        </div>
+            </header>
+      <!-- Fin barra de bùsqueda-->
+     <p class="n">12334</p>
+            
+            <article>
+              <section>
+               <center>
+                <h1 id="titulo">
+                  Museo Cerro de la Silla: <span>Fòsiles encontrados en Mèxico</span>          
+                </h1>
+              </center>
+                  <hr>
+             </section> <!--Titulo-->  
+                
+                               <center>
+                     <section>
+                    <div class="slider">
+                       <ul>
+                        <li><a href=""><img src="https://img.culturacolectiva.com/featured/2018/06/12/1528851674694/dinosaurio-en-coahuila-medium.jpg" class="imageno" alt="1er fòsil"> </a></li>
+                           
+                         <li><a href=""><img src="https://www.portalpolitico.tv/sites/portalpolitico.tv/files/styles/width_800/public/photos/noticia/00126567-original.jpeg?itok=CXwhRtGA" class="imageno" alt="1er fòsil"> </a></li>                          
+               
+                           
+                           
+                       <li><a  href=""><img src="https://static.jornadabc.mx/cdn/farfuture/3ENFJrAYty_aCn-D8yNvvDASij1LNfdQWDg6lcIdwFs/mtime:1425089314/sites/default/files/images/41130218.jpg" class="imageno" alt="instalaciones"></a> </li>
+                           
+                           
+                    <li><a href=""><img src="https://www.mexicodesconocido.com.mx/sites/default/files/nodes/491/fosil.jpg" class="imageno" alt="instalaciones"> </a></li>
+            </ul> 
+        </div>    
+                     </section>    
+                 </center> 
+                <hr>
+                
+              <section><!--Inicio del primer fòsil-->
+               <center>
+                <div > <!--Imàgen del 1er fòsil-->
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Lorem ipsum <!--Titulo del primer fòsil-->
+                  </h3>   
+                      
+                      </center>
+                      <figure >
+                     <img src="https://img.culturacolectiva.com/featured/2018/06/12/1528851674694/dinosaurio-en-coahuila-medium.jpg" 
+                      class="imagen" alt="1er fosil imagen">
+                     <figcaption>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<!--Leyenda de la imàgen del 1er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 1er fòsil-->
+              </center>
+              <center>
+                  <p class="psubtema">
+<span>                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span> <!--Texto del primer fòsil-->
+              
+                   <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
+     <span>   </span>      
+
+                      <span>               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </span><!--Texto del primer fòsil-->
+
+                  </p>   
+              </center>    
+             </section><!--Fin del primer fòsil-->
+                <hr>
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Lorem Ipsum Lorem<!--Titulo del segundo fòsil-->
+                  </h3>   
+                      </center>
+                              <section><!--Inicio del segundo fòsil-->
+               <center>
+                <div > <!--Imàgen del segundo fòsil-->
+                 <figure >
+                     <img src="https://static.jornadabc.mx/cdn/farfuture/3ENFJrAYty_aCn-D8yNvvDASij1LNfdQWDg6lcIdwFs/mtime:1425089314/sites/default/files/images/41130218.jpg" 
+                      class="imagen" alt="segundo fosil imagen">
+                     <figcaption>
+                          Leyenda de la imagen <!--Leyenda de la imàgen del segundo fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del segundo fòsil-->
+              </center>
+              <center>
+                  <p class="psubtema">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<span>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</span> <!--Texto del segundo fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del segundo fòsil-->
+                <hr>
+              <section><!--Inicio del tercer fòsil-->
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Lorem Ipsum Lorem Ipsum<!--Titulo del tercer fòsil-->
+                  </h3>   
+                      </center>
+                                  <center>
+                <div> <!--Imàgen del 3er fòsil-->
+                 <figure >
+                     <img src="https://www.mexicodesconocido.com.mx/sites/default/files/nodes/491/fosil.jpg" 
+                      class="imagen" alt="tercer fosil imagen">
+                     <figcaption>
+                          dorime ameno ameno <!--Leyenda de la imàgen del 3er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 3er fòsil-->
+              </center>
+              <center>
+                  <p class="psubtema">
+                 Au sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum as tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum. . <!--Texto del tercer fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del tercer fòsil-->
+                <hr>
+              <section><!--Inicio del cuarto fòsil-->
+
+                  <center>
+                  <h3 class="tsubtema">
+                  Taiataualcsdmcosoasdsadal<!--Titulo del 4 fòsil-->
+                  </h3>
+                    </center>  
+                             <center>
+                <div> <!--Imàgen del 4 fòsil-->
+                 <figure >
+                     <img src="https://www.portalpolitico.tv/sites/portalpolitico.tv/files/styles/width_800/public/photos/noticia/00126567-original.jpeg?itok=CXwhRtGA" 
+                      class="imagen" alt="tercer fosil imagen">
+                     <figcaption>
+                          Leyenda de la imagen <!--Leyenda de la imàgen del 4er fòsil-->
+                     </figcaption>
+                 </figure>    
+                </div><!--Fin de la imàgen del 4er fòsil-->
+              </center>
+                  
+                  <center>
+ 
+                  <p class="psubtema">
+                   Au sen ir noskaidrots fakts, ka aplūkojot maketa dizainu un kompozīciju teksta saturs novērš uzmanību. Lorem Ipsum izmanto tāpēc, kas tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum as tas nodrošina vairāk vai mazāk vienmērīgu burtu izvietojumu un padara to līdzīgu lasāmam tekstam angļu valodā, kas neizdodas, ja vienu un to pašu tekstu 'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum kā standarta parauga tekstu un, izmantojot interneta meklēšanas programmās atslēgas vārdus "lorem ipsum", var redzēt cik daudz web lapu aizvien vēl gaida savu piedzimšanu. Pēdējo gadu laikā teksts Lorem Ipsum ieguvis dažādas versijas. Dažreiz tās radušās kļūdu dēļ, dažreiz – apzināti (piemēram, humoristiski un tiem līdzīgi varianti).Šis traktāts par ētikas teoriju bija ļoti populārs Renesanses periodā. Pirmā Lorem Ipsum rinda rindām.'Šeit ir teksts, šeit ir teksts' atkārto. Daudzas maketēšanas un web lapu rediģēšanas programmas mūsdienās izmanto Lorem Ipsum. .  <!--Texto del 4 fòsil-->
+                  </p>    
+              </center>    
+             </section><!--Fin del 4 fòsil-->                
+ <hr>
+            </article>
+           <footer>
+            <div class="contact">
+                <div class="footer_title">Contacto</div>
+                <div class="sep_bottom"></div>
+                <div >
+                    Direccion: JQM8+24 Cerro de La Silla, Nuevo León, Guadalupe
+                </div>
+                <div>
+                    Numero: +81 555 6507156
+                </div>
+            </div>
+            <div class="pages">
+                <div class="footer_title">Paginas </div>
+                <div class="sep_bottom"></div>
+                <p><a href="Index.html">Pagina principal</a></p>               
+                <p><a href="Fosiles.html">Pàgina Actual</a></p>  
+                <p><a href="HistoriaMx.html">Historia Mexicana</a></p>  
+                <p><a href="HistoriaMun.html">Historia del mundo</a></p>
+                <p><a href="Fauna.html">Fauna</a></p>  
+                <p><a href="Arte.html">Arte</a></p>  
+                <p><a href="Cine.html">Cine</a></p>  
+                <p><a href="Esc_verano.html">Escuelas de verano</a></p>
+                <p><a href="Programas_recorridos.html">Programas y recorridos</a></p>  
+            </div>
+            <div class="social_media">
+                <div class="footer_title">Redes sociales</div>
+                <div class="sep_bottom"></div>
+                <div><img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" alt=""></div>
+                <div><img src="https://cdn.icon-icons.com/icons2/220/PNG/512/facebook_25551.png" alt=""></div>
+                <div><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt=""></div>
+                <div><img src="https://img.icons8.com/color/480/gmail.png" alt=""></div>
+                <div id="c">
+                    <div class="c">
+                        
+                    </div>
+                    <p>Contáctanos</p>
+                </div>
+              <form>
+                <input type="text" id="Name" name="Name" placeholder="Nombre"><br>
+                <input type="text" id="Phone" name="Phone" placeholder="Correo electrónico">
+                <div class="tA">
+                   <textarea id="textArea" rows="6" cols="30"></textarea>
+                </div>
+             </form>
+             <button class="button" onclick="myFunction()" >Enviar</button>
+            </div>
+        
+            
+            </body>
+ 
+    <script>
+      function myFunction() {
+        var Name=document.getElementById("Name").value;
+        var Phone=document.getElementById("Phone").value;
+        var textArea=document.getElementById ("textArea").value;
+          
+        if ( Name == "" || Phone=="" || textArea==""){
+            alert("Asegúrate de llenar todos los campos antes de enviar los datos")
+            }
+        else{
+            
+        var obj= {
+            Nombre: Name,
+            Telefono: Phone,
+            Comentarios:textArea
+        };
+        console.log(obj);
+        }
+}  
+    </script>
+
+</html> 
+
+
