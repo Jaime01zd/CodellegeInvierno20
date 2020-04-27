@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fauna</title>
+        <link rel="icon" type="image/png" href="logo.png" /> 
+
+        <meta charset="UTF-8">
+        <style>
+        /*Imagen de titulo*/    
+          .contenedor{
+               position: initial;
+               margin-bottom: 0%;
+              width:100%;
+                height: 500px;
+                margin:0px;
+                overflow:hidden;
+                padding-top:0%;
+              
+           }
+            
+            .contenedor img{
+                width:100%;
+                height: 500px;
+                
+            }
+              /*Termina imagen de titulo*/
+
+           *{
+                margin: 0px;
+            }
+
+			#header {
+                z-index:99;
+                width: 100%;
+                background-color: rgb(237, 252, 110);
+                position:fixed;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+            /*barra de navegación*/
+            .nav{
+                padding-left: 200px;
+            }
+            /*todo lo que está dentro de ella*/
+			.nav li a {
+				color:rgb(170, 125, 0);
+				text-decoration:none;
+				padding:20px 40px;
+				display:block;
+			}
+            /*ponerle background a los subtemas*/
+            .nav li ul li  {
+                background-color: rgb(237, 252, 110);
+                margin-left: -40px;
+            }
+            
+			.nav li a:hover {
+				background-color:#43434342;
+
+			}
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+                list-style: none;
+			}
+
+			li:hover ul {
+				display:block;
+			}
+
+            .nav > li {
+                display: inline-block;
+            }
+
+            .img img {
+                width: 1349px;
+                height: 900px;
+            }
+
+            /*acomodar subtemas de historia*/
+            .historia li{
+                width:135px;
+                text-align: left;
+            }
+            .historia li a{
+                padding:10px 10px;
+            }
+            /*acomodar subtemas de naturaleza*/
+            .naturaleza li{
+                width:157px;
+                text-align: left;
+            }
+            .naturaleza li a{
+                padding:10px 10px;
+            }
+            /*acomodar subtemas de cultura*/
+            .cultura li{
+                width:130px;
+                text-align: left;
+            }
+            .cultura li a{
+                padding:10px 10px;
+            }
+
+            /*slider*/
+
+            .slider{
+                width:100%;
+                height: 500px;
+                margin:0px;
+                overflow:hidden;
+                background-color: #F3BD40;
+                padding-top:0%;
+            }
+            
+            .slider ul {
+                display:flex;
+                padding: 0;
+                width: 400%;
+                animation: cambio 20s infinite alternate;
+            }
+            
+            .slider li{
+                width: 100%;
+                list-style: none;
+            }
+            
+            .slider img {
+            width: 100%;
+            }
+            
+            @keyframes cambio {
+                0%{ margin-left:0;}
+                20%{ margin-left:0;}
+                
+                25%{ margin-left:-100%;}
+                45%{ margin-left:-100%;}
+                
+                50%{ margin-left:-200%;}
+                70%{ margin-left:-200%;}
+                
+                75%{ margin-left:-300%;}
+                100%{ margin-left:-300%;}
+                
+                  }
+                
+            /*Footer*/
+            
+            .foot{
+                position: absolute;   
+            }
+        
+            .logo_s{
+                width:100px;
+                height:30px;
+            }
+            .logo img{
+                width:150px;
+                height:58px;
+                position:absolute;
+            }
+            
+            /*footer*/
+
+footer {
+            background-color: rgb(175, 128, 0);
+            color: #fff;
+            height: 390px;
+            font-size:21px;
+            padding-top: 20px;
+        }
+        .sep_bottom{
+            position:absolute;
+            width:15%;
+            height: 1vh;
+            background-color: white;
+            margin-top:-1%;
+        }
+        .contact{
+            margin-left:3%;
+            width: 20%;
+            float:left;
+        }
+        .contact div, .pages .footer_title, .social_media div{
+            margin-bottom: 20px;
+        }
+        .footer_title{
+            font-size: 30px;
+        }
+        .pages{
+            margin-left:20%;
+            float:left;
+            width: 20%;
+        }
+        .social_media{
+            margin-right: 3%;
+            float:right;
+            width: 17%;
+        }
+        .social_media img{
+            float:left;
+            width:30px;
+            margin-right:5%;
+            margin-top:5%;
+        }
+
+            
+            a:link {
+                text-decoration: none;
+                color:white;
+            }
+            
+
+            /* visited link */
+            a:visited {
+              color: white;
+            }
+
+            /* mouse over link */
+            a:hover {
+              color: black;
+            }
+
+            /* selected link */
+            a:active {
+              color: white;
+            }
+            
+            #Name{
+                margin:1%;
+                
+            }
+            
+            #Phone{
+                margin:1%;
+                
+                
+            }
+
+            #textArea{
+                margin:0%;
+                
+                
+            }
+            
+            #c{
+                margin:10px;
+            }
+            
+            #e{
+             margin:0%;   
+            }
+            
+            
+            .button {
+              background-color: white;
+              border: none;
+              color: black;
+              padding: 8px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin:0%;
+            }
+            
+            textarea {
+              padding: 0px;
+              box-sizing: border-box;
+              border: 2px solid #ccc;
+              border-radius: 4px;
+              background-color: #f8f8f8;
+              resize: none;
+            }
+            
+            .tA{
+                margin:1%;
+            }
+            
+            input[type=text] {
+              border: 2px solid #ccc;
+              border-radius: 4px;
+              background-color: #f8f8f8;
+            }
+            
+            .c{
+                height:35px;
+                background-color:rgb(175, 128, 0);
+                margin:2%;
+                
+            }
+            
+            .button:active {
+              background-color: black;
+              color:white;
+            }
+            
+            .button:hover {
+              background-color: black;
+              color:white;
+            }
+            
+            .muestra{
+                margin-left:0%; 
+                margin-top: 0%;
+                margin-bottom:1.5%; 
+                float: left;
+            }
+            .texto{
+                float: auto;
+                text-align; 
+                background-color: #FFAE3B;
+                /*width: 93.6%;*/
+                margin-right:0%;
+                /*height:390px;*/
+                padding: 50px;
+                margin: 0px;
+            }
+            
+            .bordes{
+               background-color:rgb(237, 252, 110);
+               /*width: 101.2%;*/
+               margin-right:0%;
+               height:20px;
+               border-color:rgb(237, 456, 110);
+               border-width: 60px;
+               margin-top:0%;
+            }
+            
+            
+            .texto h1
+            {
+                font-size:64px;
+                color: #503A08;
+            }
+            
+            .texto p
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+            
+            .horarios p{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 18px;  
+            }
+            
+            .horarios{
+                background-color: #FFAE3B;
+                width: 200px;
+                height:390px;
+                padding: 50px;
+                margin: 0.3px;
+            }
+            
+            .hr{
+                border:70%;
+                width:100px;
+                border-color: white;
+            }
+            
+            .silvestre{
+                background-color: #FFAE3B;
+                float: right;
+                width: 10px;
+                height:390px;
+                 margin-top: 50px;
+                margin-right:10px ;
+            }
+            
+            .salvaje{
+                background-color: #FFAE3B;
+                float: left;
+                width: 480px;
+                height:390px;
+                margin-top: 50px;
+                margin-left:10px ;
+            }
+            
+            .nada{
+                width: 100%;
+                height:100px;
+                background-color: rgb(175, 128, 0);
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                color: white;
+                
+            }
+            
+            .foot{
+                clear:both;
+            }
+            
+            .foto1{
+                padding-top:50px;
+                padding-right:50px;
+                padding-bottom:50px;
+                padding-left:50px;
+                margin: 1px; 
+                border: 8px solid rgb(237, 252, 110);
+                float: left; 
+                width: 250px; 
+            }
+            
+            .foto2{
+                padding-top:50px;
+                padding-right:50px;
+                padding-bottom:50px;
+                padding-left:50px;
+                margin: 1px; 
+                border: 8px solid rgb(237, 252, 110);
+                float: right; 
+                width: 250px; 
+            }
+            
+            .foto3{
+                padding-top:50px;
+                padding-right:50px;
+                padding-bottom:50px;
+                padding-left:50px;
+                margin: 1px; 
+                border: 8px solid rgb(237, 252, 110);
+                float: center; 
+                width: 250px; 
+            }
+            
+            
+            .padding{
+                clear: both;
+                position: relative;
+                width:100%;
+                height:50px;
+                background-color: #FFAE3B;
+                text-align:center;
+                margin-top:0%;
+            }
+            
+            .centro{
+                /*float:center;*/
+                text-align: center
+                width: 240px;
+                height:344px;
+                background-color: #FFAE3B;
+                padding: 50px;
+                margin: 0.3px;
+            }
+            
+            .salvaje p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                
+            }
+            
+            .silvestre p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+            }
+            
+            .padding p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                word-spacing: 450px;
+            }
+            
+            body{
+                margin:0%;
+            }
+            
+            img{  
+             max-height: 100%;
+            }
+            
+           div {
+            max-width: auto;
+            min-width: auto;
+           }
+           #contenedor_principal{
+                width:1024px;
+                height:auto;
+                position:relative;
+                margin:auto;
+                }
+           .contenedor_imagen_texto{
+                width:335px;
+                height:auto;
+                position:relative;
+                display:inline-block;
+                vertical-align:top;
+                overflow:hidden;
+                }
+            .imagen, .words{
+                width:100%;
+                height:auto;
+                position:relative;
+                display:inline;
+                }
+            .words{
+                height:auto;
+                text-align:center;
+                font-family: Arial, Helvetica, sans-serif;
+                }
+            .contamos{
+             width: 300px;
+             height:300px;
+            }
+            
+            .big{
+                background-color: #FFAE3B;
+                width:100%;
+                padding:auto;
+                padding-top: 2%;
+                padding-bottom:2%;
+            }
+            
+            img{
+                z-index:1;
+            }
+            
+            .b{
+             text-align: center;   
+            }
+         
+
+            
+            
+
+            
+        </style>
+    </head>
+
+    <body>
+            <!--Barra de navegación-->
+
+        <div id="header">
+    <nav> 
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul class="nav">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="">Historia</a>
+                <ul class="historia">
+                    <li><a href="Fosiles.html">Fosiles</a></li>
+                    <li><a href="HistoriaMx.html">Historia mexicana</a></li>
+                    <li><a href="HistoriaMun.html">Historia del mundo</a></li>
+                </ul>
+            </li>
+            <li><a href="">Naturaleza</a>
+                <ul  class="naturaleza">
+                    <li><a href="Flora.html">Flora</a></li>
+                    <li><a href="Fauna.html">Fauna</a></li>
+                </ul>
+            </li>
+            <li><a href="">Cultura</a>
+                <ul  class="cultura">
+                    <li><a href="Arte.html">Arte</a></li>
+                    <li><a href="Cine.html">Cine</a></li>
+                </ul>
+            </li>
+            <li> <a href="">Actividades</a>
+                <ul  class="actividades">
+                    <li><a href="Programas_recorridos.html"> Programas y Recorridos </a></li>
+                    <li><a href="Esc_verano.html">Escuela de verano </a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>            <!--Aquí termina la barra de navegación-->
+                           <!--Imagen de titulo-->
+      <div class="contenedor">
+          <img src="Fauna.png" />
+      </div>
+      
+     <div class=bordes>
+        
+     </div>
+                 <!--Imagen de muestra principal-->
+     <!--<div class="muestra">
+        <img src="https://museodelafauna.com/wp-content/uploads/2019/03/2-mobile.jpg" align= right width=200px height=200px />
+      </div>--> 
+     
+          <!--Sobre la exposicion-->
+      <div class="texto">
+        <h1>Sobre la exposición</h1>
+        <br>
+        <hr class= "hr">
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus mattis molestie a iaculis. Urna et pharetra pharetra massa massa ultricies mi quis. Id diam maecenas ultricies mi eget mauris pharetra et. Ullamcorper velit sed ullamcorper morbi tincidunt ornare. In egestas erat imperdiet sed euismod nisi. Lacus suspendisse faucibus interdum posuere lorem ipsum. Urna nec tincidunt praesent semper. Nulla aliquet enim tortor at auctor. Blandit aliquam etiam erat velit scelerisque in dictum non. Cras ornare arcu dui vivamus.</p>
+        <br>
+        <p>Commodo nulla facilisi nullam vehicula ipsum. Posuere urna nec tincidunt praesent. Eu consequat ac felis donec et odio pellentesque diam volutpat. Duis convallis convallis tellus id interdum. Aliquet eget sit amet tellus cras adipiscing enim. Nibh sed pulvinar proin gravida. Est lorem ipsum dolor sit amet consectetur adipiscing elit. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Nunc congue nisi vitae suscipit tellus mauris. Sed enim ut sem viverra. Mauris pharetra et ultrices neque ornare aenean euismod. Nec ultrices dui sapien eget mi. Sollicitudin nibh sit amet commodo nulla facilisi. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Dignissim enim sit amet venenatis.</p>
+      </div>
+      
+     <!--<div class= "horarios">
+        <p>Martes a Domingo </p>
+        <p>9 a 19 hrs </p>
+     </div>-->
+
+        <div class="slider">
+            <ul>
+                <li><img src="https://www.diariodeleon.es/media/diariodeleon/images/2015/06/21/988257_1.jpg" alt="instalaciones"> </li>
+                <li><img src="https://photo980x880.mnstatic.com/b87490c7911ca6904ba51dd58b80e561/museo-de-la-fauna-y-ciencias-naturales-de-monterrey.jpg" alt="instalaciones"> </li>
+                <li><img src="https://www.conmishijos.com/uploads/ocio_familia/museo_desierto_mexico.jpg" alt="instalaciones"> </li>
+                <li><img src="https://www.entreestudiantes.com/wp-content/uploads/2016/09/CZULE-12.jpg" alt="instalaciones"> </li>
+            </ul> 
+        </div> 
+        <div class=bordes>
+        
+     </div>
+        
+        <div class="nada">
+            <br>
+            <p>Contamos con: </p>   
+        </div>
+        
+        <div class= "big">
+            <div id="contenedor_principal">
+            <!--Primera Imagen-->
+                <div class="contenedor_imagen_texto">
+                <div class="imagen"><img class="contamos" src="https://i.ytimg.com/vi/inJvSd3_0z0/maxresdefault.jpg"></div>
+                <div class="words">Fauna Salvaje</div>
+            </div>
+
+            <!--Segunda Imagen-->
+            <div class="contenedor_imagen_texto">
+                <div class="imagen"><img  class="contamos" src="https://www.unotv.com/portal/unotv/imagenes_galeria/38696-GaleriaUno.jpg"></div>
+                <div class="words">Fauna Silvestre</div>
+            </div>
+
+            <!--tercera Imagen-->
+            <div class="contenedor_imagen_texto">
+                <div class="imagen"><img class="contamos" src="https://i.ytimg.com/vi/O3GVHRK5gng/hqdefault.jpg"></div>
+                <div class="words">Fauna</div>
+                </div>
+            </div>
+        </div>
+        <div class=bordes>
+        
+     </div>
+
+                <footer>
+            <div class="contact">
+                <div class="footer_title">Contacto</div>
+                <div class="sep_bottom"></div>
+                <div >
+                    Direccion: JQM8+24 Cerro de La Silla, Nuevo León, Guadalupe
+                </div>
+                <div>
+                    Numero: +81 555 6507156
+                </div>
+            </div>
+            <div class="pages">
+                <div class="footer_title">Paginas </div>
+                <div class="sep_bottom"></div>
+                <p><a href="Index.html">Pagina principal</a></p>               
+                <p><a href="Fosiles.html">Fosiles</a></p>  
+                <p><a href="HistoriaMx.html">Historia Mexicana</a></p>  
+                <p><a href="HistoriaMun.html">Historia del mundo</a></p>
+                <p><a href="Flora.html">Flora</a></p>  
+                <p><a href="Arte.html">Arte</a></p>  
+                <p><a href="Cine.html">Cine</a></p>  
+                <p><a href="Esc_verano.html">Escuelas de verano</a></p>
+                <p><a href="Programas_recorridos.html">Programas y recorridos</a></p>  
+            </div>
+            <div class="social_media">
+                <div class="footer_title">Redes sociales</div>
+                <div class="sep_bottom"></div>
+                <div><img src="https://image.flaticon.com/icons/svg/1384/1384063.svg" alt=""></div>
+                <div><img src="https://cdn.icon-icons.com/icons2/220/PNG/512/facebook_25551.png" alt=""></div>
+                <div><img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-icono-de-twitter-logo-by-vexels.png" alt=""></div>
+                <div><img src="https://img.icons8.com/color/480/gmail.png" alt=""></div>
+                <div id="c">
+                    <div class="c">
+                        
+                    </div>
+                    <p>Contáctanos</p>
+                </div>
+              <form>
+                <input type="text" id="Name" name="Name" placeholder="Nombre"><br>
+                <input type="text" id="Phone" name="Phone" placeholder="Correo electrónico">
+                <div class="tA">
+                   <textarea id="textArea" rows="6" cols="30"></textarea>
+                </div>
+             </form>
+                <div class="b"><button class="button" onclick="myFunction()">Enviar</button></div>
+            </div>
+        </footer>
+    </body>
+    
+    <script>
+      function myFunction() {
+        var Name=document.getElementById("Name").value;
+        var Phone=document.getElementById("Phone").value;
+        var textArea=document.getElementById ("textArea").value;
+          
+        if ( Name == "" || Phone=="" || textArea==""){
+            alert("Asegúrate de llenar todos los campos antes de enviar los datos")
+            }
+        else{
+            
+        var obj= {
+            Nombre: Name,
+            Telefono: Phone,
+            Comentarios:textArea
+        };
+        console.log(obj);
+        }
+}  
+    </script>
+</html>
