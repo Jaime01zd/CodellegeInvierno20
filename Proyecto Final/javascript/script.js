@@ -2,14 +2,20 @@ function myFunction() {
     var Name=document.getElementById("Name").value;
     var Phone=document.getElementById("Phone").value;
     var textArea=document.getElementById ("textArea").value;
+      
+    if ( Name == "" || Phone=="" || textArea==""){
+        alert("Asegúrate de llenar todos los campos antes de enviar los datos")
+        }
+    else{
+        
     var obj= {
         Nombre: Name,
         Telefono: Phone,
         Comentarios:textArea
     };
     console.log(obj);
+    }
 }
-
 /*Usuario */
 
 function user(){
@@ -228,7 +234,7 @@ function log_out(){
 
 
 //Deshabilitar el botón back desde el principio
-document.getElementById("back").disabled=true
+document.getElementById("back").disabled=true;
 document.getElementById("bordexd").style.pointerEvents="none"
 //cuando de scroll a la pantalla si llega a la seccion de recorridos, la barra nav dejará de verse
 window.onscroll = function() {
